@@ -98,8 +98,9 @@ main {
 #hero h1 {
     font-family: "Pixelify Sans", sans-serif;
     font-weight: 900;
-    font-size: 6em;
+    font-size: 6.4em;
     text-align: center;
+    color: hsl(207, 100%, 64%)
 }
 
 #hero p {
@@ -130,3 +131,5 @@ main {
     text-align: justify;
     font-size: 1.1em;
 }
+
+/* Skills section styles */
