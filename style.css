@@ -106,3 +106,27 @@ main {
     font-size: 1.4em;
     text-align: center;
 }
+
+/* About section styles */
+#about {
+    display: block;
+    width: 80%;
+    margin: 0 auto 40px;
+    font-size: 1rem;
+    padding-bottom: 40px;
+    border-bottom: 1px solid hsl(0, 100%, 100%);
+}
+
+#about h2 {
+    font-family: "Pixelify Sans", sans-serif;
+    font-weight: 900;
+    font-size: 2.8em;
+    text-align: left;
+    margin-bottom: 20px;
+    color: hsl(207, 100%, 64%)
+}
+
+#about p {
+    text-align: justify;
+    font-size: 1.1em;
+}
