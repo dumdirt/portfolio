@@ -1,14 +1,17 @@
 /* External fonts */
 @font-face {
-    font-family: "Pixelify Sans";
-    src: url("fonts/PixelifySans-VariableFont_wght.ttf") format("truetype");
-    font-weight: 100 900;
+    font-family: "Pixelta";
+    src: url("fonts/Pixelta.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "Varela Round";
-    src: url("fonts/VarelaRound-Regular.ttf") format("truetype");
-    font-weight: 400;
+    font-family: "Raster-Forge";
+    src: url("fonts/RasterForgeRegular-JpBgm.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "determination";
+    src: url("fonts/determination.ttf") format("truetype");
 }
 
 *, ::before, ::after {
@@ -22,58 +25,71 @@ html {
 }
 
 body {
-    background-color: hsl(229, 84%, 5%);
-    font-family: "Varela Round", sans-serif;
+    background-color: #020618;
+    font-family: "Raster-Forge", sans-serif;
     color: white;
 }
 
 /* Navigation bar styles */
+header {
+    display: flex;
+    justify-content: center;
+}
+
 #navbar {
-    background-color: hsl(229, 84%, 10%);
-    width: 100%;
-    height: 55px;
+    background-color: #020a31;
+    width: 65%;
+    max-width: 1100px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
-    top: 0;
+    top: 10px;
     font-size: 1rem;
-    border-bottom: 1px solid hsl(207, 100%, 40%);
+    border: 2px solid #2d58fa;
+    border-radius: 4px;
     gap: 1rem;
+    box-shadow: 2px 2px 0 #2d58fc;
 }
 
+#navbar p,
 #navbar a {
     display: flex;
     align-items: center;
-    text-decoration: none;
     color: white;
-    font-size: 1em;
     padding: 0.5em 1em;
 }
 
-#navbar a.nav-home {
+#navbar p {
     height: 100%;
-    font-family: "Pixelify Sans", sans-serif;
-    font-weight: 600;
+    font-family: "determination", sans-serif;
     font-size: 1.8em;
-    transition: transform 0.2s ease-in;
+}
+
+#navbar a {
+    text-decoration: none;
 }
 
 #navbar a.nav-link {
-    transition: color 0.2s ease-in, background-color 0.2s ease-in;
-}
-
-#navbar a.nav-home:hover {
-    transform: translateY(-4px);
+    font-size: 1em;
+    border: 1.5px solid #587afb;
+    border-radius: 4px;
+    transition: transform 0.2s linear;
+    box-shadow: 2px 2px 0 #3553be;
 }
 
 #navbar a.nav-link:hover {
-    color: hsl(207, 100%, 64%);
-    background-color: hsla(207, 100%, 50%, 0.2);
-    border-radius: 5px;
+    background-color: #587afb;
+    color: #ffe17d;
+    transform: translateY(-5px);
 }
 
-#navbar a.nav-home::before {
+#navbar a.nav-link:active {
+    transform: translateY(1px);
+}
+
+#navbar p::before {
     content: ">\00A0";
 }
 
@@ -96,15 +112,15 @@ main {
 }
 
 #hero h1 {
-    font-family: "Pixelify Sans", sans-serif;
-    font-weight: 900;
+    font-family: "Pixelta", sans-serif;
+    letter-spacing: 4px;
     font-size: 6.4em;
     text-align: center;
     color: hsl(207, 100%, 64%)
 }
 
 #hero p {
-    font-size: 1.4em;
+    font-size: 1.2em;
     text-align: center;
 }
 
@@ -119,7 +135,7 @@ main {
 }
 
 #about h2 {
-    font-family: "Pixelify Sans", sans-serif;
+    font-family: "determination", sans-serif;
     font-weight: 900;
     font-size: 2.8em;
     text-align: left;
@@ -133,3 +149,33 @@ main {
 }
 
 /* Skills section styles */
+#skills {
+    display: block;
+    width: 80%;
+    margin: 0 auto 40px;
+    font-size: 1rem;
+    padding-bottom: 40px;
+    border-bottom: 1px solid hsl(0, 100%, 100%);
+}
+
+#skills h2 {
+    font-family: "determination", sans-serif;
+    font-weight: 900;
+    font-size: 2.8em;
+    text-align: left;
+    margin-bottom: 20px;
+    color: hsl(207, 100%, 64%)
+}
+
+#skills ul {
+    list-style-type: none;
+    list-style-position: inside;
+}
+
+#skills li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
