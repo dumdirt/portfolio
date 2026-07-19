@@ -12,60 +12,133 @@
 
         <!-- Navigation bar -->
         <nav id="navbar">
-            <p>Display Name</p>
+            <p>DISPLAY NAME</p>
             <a class="nav-link" href="#about">About</a>
             <a class="nav-link" href="#skills">Skills</a>
-            <a class="nav-link" href="#work">Work</a>
             <a class="nav-link" href="#projects">Projects</a>
+            <a class="nav-link" href="#experience">Experience</a>
             <a class="nav-link" href="#contact">Contact</a>
         </nav>
     </header>
     <main>
         <!-- Hero section -->
-        <section id="hero">
-            <h1>Display Name</h1>
+        <section id="hero-container">
+            <h1>DISPLAY NAME</h1>
             <p>an aspiring developer</p>
         </section>
 
         <!-- About section -->
         <section id="about">
-            <h2>About Myself</h2>
-            <p>Hello, my name is Display Name, a high school student with an interest in studying computer science.<br><br>
-                I am passionate about learning new technologies and developing my skills in programming and software development,
-                particularly in the field of software engineering and game development, at the moment.
-                To be honest, I was not always set on this path, but recently, through intensive introspection and various experiences
-                that have exposed myself to the world of computer science, I realized that the thought of computer science really intrigued me,
-                and so I began to explore it further in depth. Since then, I have been learning and practicing various computer languages,
-                albeit only few so far, namely HTML and CSS. But, I am enthusiastic about learning more in the future.<br><br>
-                When I am not studying or programming, I often find myself playing video games, mainly first-person shooters such as Valorant and Counter-Strike,
-                which I find to be a great way to relax after a long and tiresome day. I also especially enjoy Japanese media, such as anime and manga,
-                for their unique artistic styles and storytelling, with Monster and Jojo's Bizarre Adventure among my favorites.
-                Besides that, I also take joy in puzzle and strategy games, such as Wordle, Sudoku, and Chess.
-            </p>
+            <h2>ABOUT MYSELF</h2>
+            <section id="about-content">
+                <div class="image-container">
+                    <div class="image-label">
+                        <p>Image</p>
+                    </div>
+                    <figure class="image-content">
+                        <img src="images/Screenshot 2026-07-17 204533.png" alt="PLACEHOLDER TEXT">
+                        <figcaption>CAPTION HERE</figcaption>
+                    </figure>
+                </div>
+                <div class="desc-container">
+                    <div class="desc-label">
+                        <p>Description</p>
+                    </div>
+                    <div class="desc-content">
+                        <p>Hello, my name is Display Name, a high school student with an interest in studying computer science.<br><br>
+                        I am passionate about learning new technologies and developing my skills in programming and software development,
+                        particularly in the field of software engineering and game development, at the moment.
+                        To be honest, I was not always set on this path, but recently, through intensive introspection and various experiences
+                        that have exposed myself to the world of computer science, I realized that the thought of computer science really intrigued me,
+                        and so I began to explore it further in depth. Since then, I have been learning and practicing various computer languages,
+                        albeit only few so far, namely HTML and CSS. But, I am enthusiastic about learning more in the future.<br><br>
+                        When I am not studying or programming, I often find myself playing video games, mainly first-person shooters such as Valorant and Counter-Strike,
+                        which I find to be a great way to relax after a long and tiresome day. I also especially enjoy Japanese media, such as anime and manga,
+                        for their unique artistic styles and storytelling, with Monster and Jojo's Bizarre Adventure among my favorites.
+                        Besides that, I also take joy in puzzle and strategy games, such as Wordle, Sudoku, and Chess.
+                        </p> 
+                    </div>
+                </div>
+            </section>
         </section>
 
         <!-- Skills section -->
         <section id="skills">
-            <h2>Skills I Have Learned</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Terminal & CLIs</li>
-                <li>Git</li>
-                <li>Bash Scripting</li>
-                <li>Regular Expressions</li>
-            </ul>
+            <h2>Skills</h2>
+            <section id="skills-content">
+                <div class="learned-container">
+                    <div class="learned-label">
+                        <p>Learned</p>
+                    </div>
+                    <div class="learned-content">
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <p>Git</p>
+                        <p>Terminal/CLIs</p>
+                        <p>Regex</p>
+                    </div>
+                </div>
+                <div class="learning-container">
+                    <div class="learning-label">
+                        <p>Currently Learning</p>
+                    </div>
+                    <div class="learning-content">
+                        <p>JavaScript</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+        
+        <!-- Projects section -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <section id="projects-content">
+                <div class="projects-container">
+                    <div class="projects-label">
+                        <p>Projects</p>
+                    </div>
+                    <div class="projects-projects">
+                        <div class="project-indiv">
+                            <div>
+                                <a href="" target="_blank" rel="noopener noreferrer">
+                                    <img src="" alt="PLACEHOLDER TEXT">
+                                </a>
+                                <div class="project-info-container">
+                                    <a href="" target="_blank" rel="noopener noreferrer">
+                                        <h3>Bash Number Guessing Game</h3>
+                                    </a>
+                                    <p>A game that prompts the player to guess a number
+                                        between one and ten with the option to replay.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-indiv">
+                            <div>
+                                <a href="" target="_blank" rel="noopener noreferrer">
+                                    <img src="" alt="PLACEHOLDER TEXT">
+                                </a>
+                                <div class="project-info-container">
+                                    <a href="" target="_blank" rel="noopener noreferrer">
+                                        <h3>Bash Number Guessing Game</h3>
+                                    </a>
+                                    <p>A game that prompts the player to guess a number
+                                        between one and ten with the option to replay.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </section>
 
-        <!-- Work section -->
-        <section id="work">
-            <h2>What I Am Currently Working On</h2>
-            <p>As of the moment, I am focusing on learning a new programming language: JavaScript.
-            After mastering the basics, I plan to create a few emulations of popular browser games.</p>
-        </section>
-        <section id="projects">
-            <h2>Projects That I Have Completed</h2>
-            <p>Overview of projects you've worked on, including descriptions and links.</p>
+        <!-- Experience section -->
+        <section id="experience">
+            <h2>Experience</h2>
+            <section id="experience-content">
+
+            </section>
         </section>
     </main>
     <footer>
