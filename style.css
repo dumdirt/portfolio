@@ -476,9 +476,10 @@ main {
   height: 150px;
 }
 
-.project-details.project-link {
+.project-details .project-link {
   width: 100%;
   height: 50px;
+  color: #f2f2f2;
 }
 
 .project-title {
@@ -493,11 +494,11 @@ main {
 }
 
 .project-title:active {
-  color: #a0a0a0;
+  color: #818181;
 }
 
 .project-details .project-link:visited {
-  color: #a0a0a0;
+  color: #818181;
 }
 
 .project-details .project-desc {
