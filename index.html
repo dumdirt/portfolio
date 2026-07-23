@@ -1,182 +1,211 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A portfolio website showcasing projects and skills.">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A portfolio website showcasing projects and skills."
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="justify-center">
+      <!-- Navbar -->
+      <nav id="navbar" class="justify-center gap">
+        <p id="site-brand">PORTFOLIO</p>
 
-        <!-- Navbar -->
-        <nav id="navbar" class="justify-center gap">
-            <p id="site-brand">PORTFOLIO</p>
-
-            <!-- Navbar links -->
-            <a class="nav-link" href="#about">About</a>
-            <a class="nav-link" href="#skills">Skills</a>
-            <a class="nav-link" href="#projects">Projects</a>
-            <a class="nav-link" href="#experience">Experience</a>
-            <a class="nav-link" href="#contact">Contact</a>
-        </nav>
+        <!-- Navbar links -->
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#experience">Experience</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
     </header>
     <main>
+      <!-- Hero -->
+      <section id="hero">
+        <h1 id="hero-title" class="center-text">Dirtblock</h1>
+        <p id="hero-tag" class="center-text">aspiring CS student</p>
+      </section>
 
-        <!-- Hero -->
-        <section id="hero">
-            <h1 id="hero-title" class="center-text">Dirtblock</h1>
-            <p id="hero-tag" class="center-text">aspiring CS student</p>
-        </section>
-
-        <!-- About section -->
-        <section id="about" class="content-section">
-            <h2 class="section-heading">ABOUT MYSELF</h2>
-            <div class="grid-section grid-col-2-5 pad-v">
-                <div class="content-column pad-r">
-                    <div class="content-label">
-                        <p>Image</p>
-                    </div>
-
-                    <!-- Profile image -->
-                    <figure>
-                        <img src="images/profile-image.png" alt="PLACEHOLDER TEXT">
-                        <figcaption>Profile picture</figcaption>
-                    </figure>
-                </div>
-                <div class="content-column pad-l">
-                    <div class="content-label">
-                        <p>Description</p>
-                    </div>
-                    <div>
-
-                        <!-- About me description -->
-                        <p class="justify-text">Hello, my name is Dirtblock, a high school student with an interest in studying computer science.<br><br>
-                        I am passionate about learning new technologies and developing my skills in programming and software development,
-                        particularly in the field of software engineering and game development, at the moment.
-                        To be honest, I was not always interested in computer science, but recently, through some introspection and various experiences
-                        that have exposed myself to the world of computer science, I realized that the thought of computer science really intrigued me,
-                        and so I began to explore it further in depth. Since then, I have been learning and practicing various computer languages,
-                        albeit only few so far, namely HTML and CSS. But, I am enthusiastic about learning more in the future.<br><br>
-                        When I am not studying or programming, I often find myself playing video games, mainly first-person shooters such as Valorant and Counter-Strike,
-                        watching anime, and playing puzzle and strategy games, such as Wordle, Sudoku, and Chess.
-                        </p> 
-                    </div>
-                </div>
+      <!-- About section -->
+      <section id="about" class="content-section">
+        <h2 class="section-heading">ABOUT MYSELF</h2>
+        <div class="grid-section grid-col-2-5 pad-v">
+          <div class="content-column pad-r">
+            <div class="content-label">
+              <p>Image</p>
             </div>
-        </section>
 
-        <!-- Skills section -->
-        <section id="skills" class="content-section">
-            <h2 class="section-heading">Skills</h2>
-            <div class="grid-section grid-col-5-3 pad-v">
-                <div class="content-column pad-r">
-                    <div class="content-label">
-                        <p>Learned</p>
-                    </div>
-
-                    <!-- Skills list -->
-                    <div class="grid-section grid-col-4x1 gap justify-start">
-                        <p>HTML</p>
-                        <p>CSS</p>
-                        <p>Git</p>
-                        <p>Terminal/CLIs</p>
-                        <p>Regex</p>
-                    </div>
-                </div>
-                <div class="content-column pad-l">
-                    <div class="content-label">
-                        <p>Currently Learning</p>
-                    </div>
-
-                    <!-- Learning skills list -->
-                    <div class="grid-section grid-col-2x1 gap justify-start">
-                        <p>JavaScript</p>
-                    </div>
-                </div>
+            <!-- Profile image -->
+            <figure>
+              <img src="images/profile-image.png" alt="PLACEHOLDER TEXT" />
+              <figcaption>Profile picture</figcaption>
+            </figure>
+          </div>
+          <div class="content-column pad-l">
+            <div class="content-label">
+              <p>Description</p>
             </div>
-        </section>
-        
-        <!-- Projects section -->
-        <section id="projects" class="content-section">
-            <h2 class="section-heading">Projects</h2>
-            <div class="content-column pad-v">
-                <div class="content-label">
-                    <p>Projects</p>
-                </div>
-
-                <!-- Project items -->
-                <div class="grid-section grid-project-row gap-row">
-                    <div class="content-row project-item">
-                        <a class="project-link" href="https://github.com/dumdirt/bash-number-guessing-game" target="_blank" rel="noopener noreferrer">
-                            <img src="images/bash-icon.png" alt="Bash Icon">
-                        </a>
-                        <div class="project-details content-column align-flex-start">
-                            <a class="project-link" href="https://github.com/dumdirt/bash-number-guessing-game" target="_blank" rel="noopener noreferrer">
-                                <h3 class="project-title content-row align-center pad-l">Number Guessing Game</h3>
-                            </a>
-                            <p class="project-desc pad-l">A game written in a Bash script that prompts the player to guess a random number
-                                    between one and ten. AN option to replay is included.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+            <div>
+              <!-- About me description -->
+              <p class="justify-text">
+                Hello, my name is Dirtblock, a high school student with an
+                interest in studying computer science.<br /><br />
+                I am passionate about learning new technologies and developing
+                my skills in programming and software development, particularly
+                in the field of software engineering and game development, at
+                the moment. To be honest, I was not always interested in
+                computer science, but recently, through some introspection and
+                various experiences that have exposed myself to the world of
+                computer science, I realized that the thought of computer
+                science really intrigued me, and so I began to explore it
+                further in depth. Since then, I have been learning and
+                practicing various computer languages, albeit only few so far,
+                namely HTML and CSS. But, I am enthusiastic about learning more
+                in the future.<br /><br />
+                When I am not studying or programming, I often find myself
+                playing video games, mainly first-person shooters such as
+                Valorant and Counter-Strike, watching anime, and playing puzzle
+                and strategy games, such as Wordle, Sudoku, and Chess.
+              </p>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- Experience section -->
-        <section id="experience" class="content-section">
-            <h2 class="section-heading">Experience</h2>
-            <div class="content-column pad-v">
-                <div class="content-label">
-                    <p>Experience</p>
-                </div>
-                <div class="content-column gap">
-
-                    <!-- Work experience items -->
-                    <details>
-                        <summary>
-                            Nonexistent Work Position
-                        </summary>
-                        <p class="justify-text">Nothing to see here!</p>
-                    </details>
-                </div>
+      <!-- Skills section -->
+      <section id="skills" class="content-section">
+        <h2 class="section-heading">Skills</h2>
+        <div class="grid-section grid-col-5-3 pad-v">
+          <div class="content-column pad-r">
+            <div class="content-label">
+              <p>Learned</p>
             </div>
-        </section>
+
+            <!-- Skills list -->
+            <div class="grid-section grid-col-4x1 gap justify-start">
+              <p>HTML</p>
+              <p>CSS</p>
+              <p>Git</p>
+              <p>Terminal/CLIs</p>
+              <p>Regex</p>
+            </div>
+          </div>
+          <div class="content-column pad-l">
+            <div class="content-label">
+              <p>Currently Learning</p>
+            </div>
+
+            <!-- Learning skills list -->
+            <div class="grid-section grid-col-2x1 gap justify-start">
+              <p>JavaScript</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects section -->
+      <section id="projects" class="content-section">
+        <h2 class="section-heading">Projects</h2>
+        <div class="content-column pad-v">
+          <div class="content-label">
+            <p>Projects</p>
+          </div>
+
+          <!-- Project items -->
+          <div class="grid-section grid-project-row gap-row">
+            <div class="content-row project-item">
+              <a
+                class="project-link"
+                href="https://github.com/dumdirt/bash-number-guessing-game"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="images/bash-icon.png" alt="Bash Icon" />
+              </a>
+              <div class="project-details content-column align-flex-start">
+                <a
+                  class="project-link"
+                  href="https://github.com/dumdirt/bash-number-guessing-game"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <h3 class="project-title content-row align-center pad-l">
+                    Number Guessing Game
+                  </h3>
+                </a>
+                <p class="project-desc pad-l">
+                  A game written in a Bash script that prompts the player to
+                  guess a random number between one and ten. AN option to replay
+                  is included.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience section -->
+      <section id="experience" class="content-section">
+        <h2 class="section-heading">Experience</h2>
+        <div class="content-column pad-v">
+          <div class="content-label">
+            <p>Experience</p>
+          </div>
+          <div class="content-column gap">
+            <!-- Work experience items -->
+            <details>
+              <summary>Nonexistent Work Position</summary>
+              <p class="justify-text">Nothing to see here!</p>
+            </details>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
+      <!-- Contact information section -->
+      <section id="contact" class="content-column">
+        <h2 class="center-text">Contact Me</h2>
+        <div id="contact-items" class="grid-section grid-col-3x1 gap">
+          <!-- Email -->
+          <figure class="contact-item content-column">
+            <a href="mailto:thaib2772@gmail.com">
+              <img src="images/gmail-icon.png" alt="Email Icon" />
+            </a>
+            <figcaption class="content-row justify-center">Email</figcaption>
+          </figure>
 
-        <!-- Contact information section -->
-        <section id="contact" class="content-column">
-            <h2 class="center-text">Contact Me</h2>
-            <div id="contact-items" class="grid-section grid-col-3x1 gap">
+          <!-- Instagram -->
+          <figure class="contact-item content-column">
+            <a
+              href="https://www.instagram.com/dumdirt/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="images/instagram-icon.png" alt="Instagram Icon" />
+            </a>
+            <figcaption class="content-row justify-center">
+              Instagram
+            </figcaption>
+          </figure>
 
-                <!-- Email -->
-                <figure class="contact-item content-column">
-                    <a href="mailto:thaib2772@gmail.com">
-                        <img src="images/gmail-icon.png" alt="Email Icon">
-                    </a>
-                    <figcaption class="content-row justify-center">Email</figcaption>
-                </figure>
-
-                <!-- Instagram -->
-                <figure class="contact-item content-column">
-                    <a href="https://www.instagram.com/dumdirt/" target="_blank" rel="noopener noreferrer">
-                        <img src="images/instagram-icon.png" alt="Instagram Icon">
-                    </a>
-                    <figcaption class="content-row justify-center">Instagram</figcaption>
-                </figure>
-
-                <!-- Github -->
-                <figure class="contact-item content-column">
-                    <a href="https://github.com/dumdirt" target="_blank" rel="noopener noreferrer">
-                        <img src="images/github-icon.png" alt="Github Icon">
-                    </a>
-                    <figcaption class="content-row justify-center">Github</figcaption>
-                </figure>
-            </div>
-        </section>
+          <!-- Github -->
+          <figure class="contact-item content-column">
+            <a
+              href="https://github.com/dumdirt"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="images/github-icon.png" alt="Github Icon" />
+            </a>
+            <figcaption class="content-row justify-center">Github</figcaption>
+          </figure>
+        </div>
+      </section>
     </footer>
-</body>
+  </body>
 </html>
